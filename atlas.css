@@ -1,0 +1,40 @@
+body{
+  font-family: sans-serif;
+}
+article{
+    min-height: 600px;
+}
+#map {
+    height: 500px; 
+    width: 100%; 
+  }
+
+  header nav a {
+    text-decoration: none;
+    padding: 0 12px;
+    font-size: 1.25em;
+    color: black;
+}
+
+.list-inline {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.list-inline li {
+  flex: 1;
+}
+
+#id_borders:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .borders {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+}
+

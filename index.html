@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="atlas.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>ATLAS</title>
+    <script
+     src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+     ></script>
+    <script defer type="module" src="js/appMap.js"></script>
+
+</head>
+<body>
+    <header class="container-fluid p-2">
+        <nav class="container">
+            <div class="row justify-content-around align-items-center ">
+                <div class="col-auto logo p-0">
+                    <h2 class="display-5 mb-0">Atlas</h2>
+                </div>
+                <div class="col-auto links p-0">
+                    <ul class="mb-2 list-inline">
+                        <li class="nav-item">
+                            <a id="id_usa" href="#">USA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="id_israel" href="#">ISRAEL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="id_france" href="#">FRANCE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="id_thailand" href="#">THAILAND</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" col-md-4 d-flex">
+                    <input id="id_input" placeholder="Search country..." type="text" class="form-control">
+                    <button id="btn_Search" class="btn btn-dark ms-2">Search</button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- end haeder -->
+
+
+
+    <main class="container-fluid">
+        <div class="container d-flex">
+            <div class="row1 d-flex justify-content-between flex-wrap align-items-center" id="id_parent">
+                <div class="imge col-md-6 float-end ">
+                    <img id="id_img" height="300" width="400">
+                </div>
+                <div class="information col-md-3 p-5">
+                    <h2 class="mb-4  m-0">Information:</h2>
+                    <h3 class="" id="id_name"></h3>
+                    <p id="id_pop"></p>
+                    <p id="id_region"></p>
+                    <p id="id_languages"> </p>
+                    <p id="id_coin"> </p>
+                    <p id="id_capital"> </p>
+                </div>
+
+                <div class="borders col-md-2">
+                    <p class="fw-bold">States With Borders:</p>
+                   
+                    <p id="id_borders"></p>
+                </div>
+     
+                </div>
+
+            </div>
+ 
+    </main>
+    <!-- end main -->
+
+
+
+
+    <div id="id_message" class=" message bg-info mt-5 text-white m-auto p-3 text-center d-none" style="border-radius: 16px;">               
+        
+
+    </div>
+
+    <!-- end message -->
+
+    <article class="container-fluid">
+        <div class="container">
+            <h2> MAP</h2>
+            <div id="map"></div>
+        </div>
+
+    </article >
+
+</body>
+
+</html>
